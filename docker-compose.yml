@@ -8,9 +8,6 @@
 # the FastAPI Calculator application. Docker Compose is a tool that allows you
 # to define and manage multi-container Docker applications using a YAML file.
 
-# Version Specification
-version: '3.8'  # Specify the version of Docker Compose syntax to use.
-
 # Services Definition
 services:
   # Service: web
@@ -27,7 +24,8 @@ services:
     
     # Volume Mounting
     volumes:
-      - .:/app  # Mounts the current directory (host) to the `/app` directory inside the container. This facilitates live updates by reflecting changes made in the host directory within the container without rebuilding the image.
+      - .:/app  # Mounts the current directory (host) to the `/app` directory inside the container. This facilitates live updates by reflecting changes made in the 
+      # host directory within the container without rebuilding the image.
     
     # Environment Variables
     environment:
@@ -216,6 +214,10 @@ services:
 # Conclusion
 # ---------------------------------------------
 
-# This `docker-compose.yml` file serves as a foundational example for setting up and managing a Dockerized FastAPI application. By meticulously defining each service and its configurations, it demonstrates how Docker Compose can streamline the deployment and development process. The comprehensive comments and explanations embedded within the file act as a guided learning tool, equipping students with the knowledge to effectively utilize Docker and Docker Compose in their projects. Encouraging students to explore and modify these configurations will deepen their understanding and proficiency in containerization technologies, which are integral to modern software development practices.
+# This `docker-compose.yml` file serves as a foundational example for setting up and managing a Dockerized FastAPI application. 
+# By meticulously defining each service and its configurations, it demonstrates how Docker Compose can streamline the deployment 
+# and development process. The comprehensive comments and explanations embedded within the file act as a guided learning tool, equipping
+# students with the knowledge to effectively utilize Docker and Docker Compose in their projects. Encouraging students to explore and modify 
+#these configurations will deepen their understanding and proficiency in containerization technologies, which are integral to modern software development practices.
 
 # If you have any further questions or need additional assistance with Docker Compose or your application setup, feel free to ask!
